@@ -1,0 +1,119 @@
+.user > div > p {
+  margin: 0 12px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.user > img {
+  width: 50px;
+  border-radius: 500px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 202px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 14px 0px rgba(128, 128, 128, 0.251);
+}
+
+.view-box > div > img {
+  width: 3.5rem;
+}
+
+.view-box > div {
+  padding: 15px 20px;
+}
+
+.active-view {
+  background-color: #98f0c9;
+}
+
+.view-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbe4eb;
+  border-radius: 10px;
+}
+
+.view-toggle > p {
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.view-toggle {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 14px 0px rgba(128, 128, 128, 0.251);
+}
+
+.feedback-heading {
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.form-button {
+  background-color: #98f0c9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-button-red {
+  background-color: #eca4a7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-button > p {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-button-red > p {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  margin: 0;
+}
+
+.feedback {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 14px 0px rgba(128, 128, 128, 0.251);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.whole-navbar {
+  margin: 0 auto;
+  padding: 40px 40px;
+  height: 100%;
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  gap: 0px;
+  z-index: 1;
+  background-color: #e8eff5;
+}

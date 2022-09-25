@@ -1,0 +1,59 @@
+.heading-div {
+  margin: 30px 0;
+}
+
+.whole-form {
+  padding: 0 55px;
+}
+
+.form-heading {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.sub-heading {
+  margin: 0;
+  font-size: small;
+}
+
+.input-label {
+  font-size: small;
+  padding-left: 5px;
+}
+
+.input-area {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 14px 0px rgba(128, 128, 128, 0.251);
+}
+
+.phone-code::-webkit-outer-spin-button,
+.phone-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.phone-code {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  width: 14vw;
+  padding: 10px 10px;
+  color: white;
+  background-color: #5cc8a1;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 9px;
+}
