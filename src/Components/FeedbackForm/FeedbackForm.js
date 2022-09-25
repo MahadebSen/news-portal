@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FeedbackForm.css";
+import validate from "validate.js";
 
 const FeedbackForm = () => {
+  const [emailErrorMsg, setEmailErrorMsg] = useState("");
+  const [phoneErrorMsg, setPhoneErrorMsg] = useState("");
+
+  const constraints = {
+    from: {
+      email: {
+        message: "Please enter a valid e-mail",
+      },
+    },
+  };
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+
+    const msg = validate({ from: email }, constraints);
+    console.log(msg);
+    if (msg) {
+      setEmailErrorMsg(msg.from[0].slice(5, 32));
+    }
+  };
+
   return (
     <div className="whole-form">
       <div className="heading-div">
@@ -9,7 +32,7 @@ const FeedbackForm = () => {
         <p className="sub-heading">Please provide the below details!</p>
       </div>
 
-      <form className="main-form" action="">
+      <form onSubmit={handleForm} className="main-form" action="">
         <div className="form-input">
           <label className="input-label" htmlFor="">
             First Name:
@@ -59,9 +82,11 @@ const FeedbackForm = () => {
           <div>
             <input
               className="input-area"
-              type="email"
+              type="text"
+              name="email"
               placeholder="example@sample.com"
             />
+            <span className="error-msg">{emailErrorMsg}</span>
           </div>
         </div>
 
