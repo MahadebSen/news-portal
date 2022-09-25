@@ -20,11 +20,7 @@
   gap: 20px;
 }
 
-.info-div-list > p {
-  margin: 0;
-}
-
-.info-div-grid > p {
+p {
   margin: 0;
 }
 

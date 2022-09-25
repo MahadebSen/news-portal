@@ -4,7 +4,7 @@ import { useState } from "react";
 import EachViewItem from "../EachViewItem/EachViewItem";
 import "./View.css";
 
-const View = ({ listView }) => {
+const View = ({ listView, setPopUp }) => {
   const [allData, setAllData] = useState([]);
 
   useEffect(() => {
@@ -22,6 +22,7 @@ const View = ({ listView }) => {
           allData={allData}
           setAllData={setAllData}
           listView={listView}
+          setPopUp={setPopUp}
         ></EachViewItem>
       ))}
     </div>

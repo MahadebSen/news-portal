@@ -1,0 +1,15 @@
+.pop-up {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  background-color: #8b9094a1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dummy-web-page {
+  width: 85%;
+}
